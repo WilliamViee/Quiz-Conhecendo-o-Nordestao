@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz</title>
+    <link rel="stylesheet" href="./css/styles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="logo">
+            <img src="./img/logo.png" width="400px">
+        </div>
+
+        <div id="pergunta" class="pergunta">
+        </div>
+
+        <div class="respostas-container">
+            <button id="btn-1" type="submit" class="resposta" onclick="handleOnClick(this)">
+                <div class="numero">1</div>
+                <p id="resposta-1"></p>
+            </button>
+
+            <button id="btn-2" type="submit" class="resposta" onclick="handleOnClick(this)">
+                <div class="numero">2</div>
+                <p id="resposta-2"></p>
+            </button>
+
+            <button id="btn-3" type="submit" class="resposta" onclick="handleOnClick(this)">
+                <div class="numero">3</div>
+                <p id="resposta-3"></p>
+            </button>
+
+            <button id="btn-4" type="submit" class="resposta" onclick="handleOnClick(this)">
+                <div class="numero">4</div>
+                <p id="resposta-4"></p>
+            </button>
+        </div>
+
+        <div class="placar-container">
+            <div>
+                <div id="pular" onclick="handlePular()" class="pular">PULAR</div>
+                <p>PRÓXIMA</p>
+            </div>
+            
+            <div>
+                <div id="pontuacao" class="pontos"></div>
+                <p>PONTUAÇÃO</p>
+            </div>
+        </div>
+
+        <button id="reload" onclick="handleRecarregar()">⟳</button>
+    </div>
+
+    <script src="./js/script.js" type="text/javascript"></script>
+</body>
+</html>
